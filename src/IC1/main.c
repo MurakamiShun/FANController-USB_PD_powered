@@ -374,7 +374,7 @@ void main(void) {
             else{
                 rpm = UINT16_MAX - interval_RA[pin][0] + interval_RA[pin][1];
             }
-            rpm = 60000 / rpm;
+            rpm = 30000 / rpm; // 2pulse per rorate
             lcd_puts_rpm(rpm, pin);
             interval_RA[pin][0] = 0;
             interval_RA[pin][1] = 0;
