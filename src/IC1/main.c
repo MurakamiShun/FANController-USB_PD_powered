@@ -296,6 +296,7 @@ uint8_t read_x2font(uint8_t addr, uint8_t page){
         | ((font << 2) & 0x10)
         | ((font << 3) & 0x40);
     font = font | (font << 1);
+    
 }
 
 void lcd_puts_rpm(uint16_t rpm, uint8_t col){
